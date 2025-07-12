@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Articles | My Creative Blog</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #fefefe;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #8e2de2, #4a00e0);
+      color: white;
+      text-align: center;
+      padding: 1.5em 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+      text-decoration: underline;
+    }
+
+    .intro {
+      padding: 2em;
+      text-align: center;
+      background-color: #e8eaf6;
+    }
+
+    .articles-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2em;
+      gap: 30px;
+      background-color: #f3f4f6;
+    }
+
+    .article-card {
+      background-color: white;
+      width: 300px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .article-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .article-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .article-content {
+      padding: 1em;
+    }
+
+    .article-content h3 {
+      margin: 0 0 0.5em;
+      color: #4a00e0;
+      font-size: 1.3em;
+    }
+
+    .article-content p {
+      font-size: 0.95em;
+      line-height: 1.6;
+      color: #555;
+      text-align: justify;
+    }
+
+    footer {
+      background: #4a00e0;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Featured Articles</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="article.html">Articles</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Read Our Latest Posts 📰</h2>
+      <p>High-quality articles carefully crafted by expert bloggers across various categories.</p>
+    </section>
+
+    <section class="articles-section">
+      <!-- 1. Technology -->
+      <a href="#" class="article-card">
+        <img src="https://media.licdn.com/dms/image/v2/D4D12AQHgFKfgwpuksw/article-cover_image-shrink_720_1280/B4DZXJZ8OpG8AI-/0/1742840776280?e=2147483647&v=beta&t=qPJfypNx4AlRDQ_3NojQokQJb8hKKkFzgjd-7epRiW4" alt="Tech Article">
+        <div class="article-content">
+          <h3>Top 5 Programming Languages in 2025</h3>
+          <p>A deep dive into the most in-demand and futuristic programming languages reshaping development workflows. With AI, automation, and web 3.0 influencing how we build software, languages like Rust, Python, Kotlin, and TypeScript are redefining developer priorities. This article explores why these languages are growing, how they power scalable solutions, and what career opportunities they unlock in the near future.</p>
+        </div>
+      </a>
+
+      <!-- 2. Lifestyle -->
+      <a href="#" class="article-card">
+        <img src="https://imageio.forbes.com/blogs-images/jennifercohen/files/2014/11/90.jpeg?height=400&width=711&fit=bounds" alt="Lifestyle Article">
+        <div class="article-content">
+          <h3>Morning Habits for a Healthy Life</h3>
+          <p>Discover how small morning rituals can create massive impacts in your personal and professional life. From 5-minute journaling to mindful breathing and cold showers, these science-backed habits help improve energy, focus, and happiness throughout the day. Wake up with intention and build a routine that aligns your body, mind, and goals.</p>
+        </div>
+      </a>
+
+      <!-- 3. Travel -->
+      <a href="#" class="article-card">
+        <img src="https://i0.wp.com/handluggageonly.co.uk/wp-content/uploads/2017/12/Hand-Luggage-Only-2-6.jpg?resize=1000%2C664&ssl=1" alt="Travel Article">
+        <div class="article-content">
+          <h3>Exploring Hidden Gems in Europe</h3>
+          <p>Europe is home to far more than just Paris and Rome. In this travel feature, we uncover breathtaking hidden gems like Hallstatt in Austria, the cliffs of Cinque Terre in Italy, and the colorful streets of Sintra in Portugal. These destinations offer stunning views, cultural richness, and authentic experiences without the usual tourist crowds.</p>
+        </div>
+      </a>
+
+      <!-- 4. Food -->
+      <a href="#" class="article-card">
+        <img src="https://i0.wp.com/www.ahoymatey.blog/wp-content/uploads/2024/12/best-world-cuisines.jpg?fit=940%2C600&ssl=1" alt="Food Article">
+        <div class="article-content">
+          <h3>10 Global Dishes You Must Try in 2025</h3>
+          <p>From the bustling food streets of Bangkok to the elegant restaurants in Rome, 2025 is a year where food lovers are exploring global flavors like never before. Thai Massaman curry, known for its deep spice profile, has gained international praise, while Korean bibimbap continues to charm health-conscious eaters with its colorful mix of veggies and rice. Italy’s truffle risotto, made with fresh black truffles and creamy arborio rice, remains a timeless favorite. Restaurants are embracing plant-based innovations, and fusion food is becoming the norm. Whether you're a street food junkie or a gourmet connoisseur, these ten dishes will take your tastebuds on a global tour you won’t forget.</p>
+        </div>
+      </a>
+
+      <!-- 5. Design -->
+      <a href="#" class="article-card">
+        <img src="https://static.asianpaints.com/content/dam/asianpaintsbeautifulhomes/home-decor-advice/design-and-style/nine-small-house-interior-design-hacks/two-seater-couches-and-wall-mounts-design-hack.jpg" alt="Design Article">
+        <div class="article-content">
+          <h3>Minimalist Design: The Future of Home Spaces</h3>
+          <p>Minimalism is no longer just a style; it has become a way of life. In 2025, minimalist interior design is characterized by clean lines, warm neutrals, and multifunctional furniture. Designers now emphasize sustainability, using natural materials like bamboo and reclaimed wood. The result? Peaceful, breathable living spaces that not only look beautiful but also foster emotional clarity and wellbeing. This is where beauty meets purpose.</p>
+        </div>
+      </a>
+
+      <!-- 6. Fashion -->
+      <a href="#" class="article-card">
+        <img src="https://images.herzindagi.info/image/2024/Aug/Recreate-5-Shraddha-Kapoor-Inspired-Red-Outfits-Under-Rs-1000.jpg" alt="Fashion Article">
+        <div class="article-content">
+          <h3>Fashion Trends Taking Over 2025</h3>
+          <p>Fashion in 2025 is bold, inclusive, and environmentally aware. Designers are embracing recycled fabrics, AI-assisted tailoring, and digital fashion runways. Streetwear meets couture with oversized silhouettes and metallic textures, while biodegradable sneakers and vegan leather jackets are on the rise. Fashion is less about fitting in and more about expressing individuality — responsibly, confidently, and creatively.</p>
+        </div>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Creative Blog | Designed by ❤️ Prem</p>
+  </footer>
+</body>
+</html>

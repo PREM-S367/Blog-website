@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Categories</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fefefe;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #8e2de2, #4a00e0);
+      padding: 1.5em 0;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: #ffeb3b;
+    }
+
+    .intro {
+      padding: 2em;
+      text-align: center;
+      background-color: #e8eaf6;
+    }
+
+    .category-section {
+      padding: 2em;
+      background-color: #f3f4f6;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .category-card {
+      background-color: white;
+      width: 250px;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .category-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .category-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .category-card h3 {
+      margin: 0;
+      padding: 1em 0;
+      font-size: 1.2em;
+      color: #4a00e0;
+    }
+
+    footer {
+      background: #4a00e0;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+      margin-top: 2em;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Blog Categories</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="article.html">Articles</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Explore Blog Topics 📚</h2>
+      <p>Click on any category to dive into your favorite world of content!</p>
+    </section>
+
+    <section class="category-section">
+      <a href="article.html?category=tech" class="category-card">
+        <img src="https://gosharpener.com/content/uploads/photos/2024/10/sngine_c231b5ceffef422c6ff8a74d6e9c82c2.webp" alt="Tech">
+        <h3>💻 Technology</h3>
+      </a>
+      <a href="article.html?category=life" class="category-card">
+        <img src="https://www.riversideonline.com/-/media/patients-and-visitors/healthy-you/hy_lifestyle-medicine.jpg" alt="Lifestyle">
+        <h3>🌿 Lifestyle</h3>
+      </a>
+      <a href="article.html?category=travel" class="category-card">
+        <img src="https://miro.medium.com/v2/resize:fit:800/1*gEr61cZ5nQIpEtKMkEbRVg.jpeg" alt="Travel">
+        <h3>✈️ Travel</h3>
+      </a>
+      <a href="article.html?category=food" class="category-card">
+        <img src="https://www.precisionorthomd.com/wp-content/uploads/2023/10/percision-blog-header-junk-food-102323.jpg" alt="Food">
+        <h3>🍕 Food</h3>
+      </a>
+      <a href="article.html?category=design" class="category-card">
+        <img src="https://www.nobroker.in/blog/wp-content/uploads/2024/09/dreamland-living-room-modern-3d-wall-painting.webp" alt="Design">
+        <h3>🎨 Design</h3>
+      </a>
+      <a href="article.html?category=fashion" class="category-card">
+        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202502/manish-malhotra-adriana-lima-dubai-fashion-week-074358231-16x9_0.jpeg?VersionId=jjHkegHs8keCHuCqNEyiTXs9F2hCim2H" alt="Fashion">
+        <h3>👗 Fashion</h3>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Creative Blog | Designed by ❤️ Prem</p>
+  </footer>
+
+</body>
+</html>
